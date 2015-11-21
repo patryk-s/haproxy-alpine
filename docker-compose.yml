@@ -1,0 +1,8 @@
+haproxy:
+    build: .
+    ports:
+        - "443:443"
+    volumes:
+        - ./serwer.pem:/usr/local/etc/haproxy/serwer.pem
+        - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+        - ./ca.crt:/usr/local/etc/haproxy/ca.crt
