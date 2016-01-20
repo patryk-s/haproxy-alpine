@@ -3,8 +3,8 @@ FROM alpine:latest
 RUN apk update && apk add libssl1.0 pcre && rm -f /var/cache/apk/*
 
 ENV HAPROXY_MAJOR 1.6
-ENV HAPROXY_VERSION 1.6.2
-ENV HAPROXY_MD5 d0ebd3d123191a8136e2e5eb8aaff039
+ENV HAPROXY_VERSION 1.6.3
+ENV HAPROXY_MD5 3362d1e268c78155c2474cb73e7f03f9
 
 RUN buildDeps='curl gcc libc-dev linux-headers pcre-dev openssl-dev make tar' \
 	&& set -x \
